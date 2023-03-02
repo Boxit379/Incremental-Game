@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    cursor: default;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+
+#root {
+    display: flex;
+}
+
+#sidebar {
+    width: 15%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+#main {
+    width: 85%;
+    height: 100vh;
+    padding: 20px;
+}
+
+#actions, #buildings {
+    height: 50vh;
+}
+
+#sidebar-right {
+    width: 15%;
+    text-align: center;
+}
+
+button {
+    border: 1px solid #cccccc;
+    color: white;
+    background-color: black;
+    font-family: monospace;
+    padding: 3px;
+    margin: 3px;
+}
+
+button:hover {
+    border: 1px solid white;
+}
