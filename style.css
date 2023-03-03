@@ -3,6 +3,8 @@
     padding: 0;
     user-select: none;
     cursor: default;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,20 +15,29 @@ body {
 
 #root {
     display: flex;
+    margin: 10px;
 }
 
 #sidebar {
-    width: 15%;
-    height: 100vh;
+    width: 20%;
+    height: 100vh-20px;
     background-color: black;
     text-align: center;
-    padding: 20px;
+    margin: 10px;
+    overflow: visible;
+}
+
+#log {
+    height: 95vh;
+    /* fade out contents at the bottom */
+    mask-image: linear-gradient(to bottom, black 50%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent);
 }
 
 #main {
-    width: 85%;
+    width: 80%;
     height: 100vh;
-    padding: 20px;
+    margin: 10px;
 }
 
 #actions, #buildings {
@@ -36,6 +47,7 @@ body {
 #sidebar-right {
     width: 15%;
     text-align: center;
+    margin: 10px;
 }
 
 button {
